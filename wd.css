@@ -1,0 +1,11 @@
+.menu {
+	BACKGROUND-COLOR: #ffffff; POSITION: absolute; WIDTH: 56px
+}
+.notHot {
+	COLOR: #CC6699; FONT-FAMILY: "ËÎÌו"; FONT-SIZE: 12px; FONT-WEIGHT: normal; LINE-HEIGHT: 14px; TEXT-DECORATION: none
+}
+.Hot {
+	COLOR: #CC6699; FONT-FAMILY: "ËÎÌו"; FONT-SIZE: 12px; FONT-WEIGHT: normal; LINE-HEIGHT: 14px; TEXT-DECORATION: none
+}
+.bluerain {  font-family: "Verdana", "Arial", "Helvetica", "sans-serif"; font-size: 9px; font-style: normal; line-height: normal; font-weight: normal; font-variant: normal; text-transform: none; color: #006699; text-decoration: none}
+a.bluerain:hover {  font-family: "Verdana", "Arial", "Helvetica", "sans-serif"; font-size: 9px; color: #FFFFFF; text-decoration: underline; background-color: #6699cc; font-style: normal; line-height: normal; font-weight: normal; font-variant: normal; text-transform: none}

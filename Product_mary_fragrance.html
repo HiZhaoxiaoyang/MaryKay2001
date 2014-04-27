@@ -1,0 +1,713 @@
+<HTML><HEAD><TITLE>product_marykay_fragrance</TITLE>
+<META content="text/html; charset=gb2312" http-equiv=Content-Type>
+<SCRIPT language=JavaScript>
+	var frank
+	var workie4
+	workie4 = navigator.appVersion;
+	work = workie4.indexOf("MSIE 4",17);
+	if (work == 17) {
+	frank = true;
+	}
+var n = (navigator.appName == "Netscape")
+var n4 = (document.layers) ? 1:0
+var ie = (navigator.appName == "Microsoft Internet Explorer")
+var ie4 = (document.all) ? 1:0
+var browserName = navigator.appName;
+var rolloversOK = 0;
+browserVer = parseInt(navigator.appVersion);
+if (n && browserVer >= 3) rolloversOK = 1;
+else if (ie && browserVer >= 4) rolloversOK = 1;
+if (n4) {
+	if (navigator.appVersion.indexOf("X11") >= 0) {
+		n4 = 0;
+	}
+}
+else if (ie4) {
+ 	if ((navigator.appVersion.indexOf("Macintosh") >= 0) || (navigator.appVersion.indexOf("Mac_") >= 0)) {
+		ie4 = 0;
+	}
+}
+var theTimeout = setTimeout("","1");
+var subTheTimeout = setTimeout("","1");
+var version = "no";
+var top_adjust = 0;
+var subtop_adjust = 0;
+var offset;
+var browserWidth;
+var browserOffset;
+var pageWidth = 800;
+if (n4) {
+	version = "ok";
+	top_adjust = 4;
+}
+else if (ie4) {
+        version = "ok";
+        top_adjust = 4;
+}
+var totalMenus = 1;
+var menuPosX = 1;
+var menuPosY = new Array(totalMenus);
+var itemsOnMenu = new Array(totalMenus);
+var menuItems = new Array(totalMenus);
+var urlLinks = new Array(totalMenus);
+var lastMenu = -99;
+var lastHotItem = -99;
+var moveOver = 3;
+var seriestotalMenus = 1;
+var seriesPosX = 1;
+var seriesPosY = new Array(seriestotalMenus);
+var seriesOnMenu = new Array(seriestotalMenus);
+var seriesItems = new Array(seriestotalMenus);
+var seriesLinks = new Array(seriestotalMenus);
+var lastseriesMenu = -99;
+var serieslastHotItem = -99;
+var seriesmoveOver = 3;
+var newseriesMenu
+var testtotalMenus = 1;
+var testPosX = 1;
+var testPosY = new Array(testtotalMenus);
+var testOnMenu = new Array(testtotalMenus);
+var testItems = new Array(testtotalMenus);
+var testLinks = new Array(testtotalMenus);
+var lasttestMenu = -99;
+var testlastHotItem = -99;
+var testmoveOver = 3;
+var notarrow = "images/dot.gif";
+var arrow = "images/arrow.gif";
+var aroHot = "#FFFFFF";
+var aroNormal = "#E0A5C2";
+var bgHot = "#FBD0F4";
+var bgNormal = "#ffffff";
+menuPosY[1] = 61  + top_adjust;
+itemsOnMenu[1] = 6;
+menuItems[1] = new Array(itemsOnMenu[1]);
+urlLinks[1] = new Array(itemsOnMenu[1]);
+menuItems[1][0] = "玫琳凯&middot;艾施女士";			urlLinks[1][0] = "Marykay_company_mary.html"
+menuItems[1][1] = "玫琳凯公司历史";			urlLinks[1][1] = "Marykay_company_history.html";
+menuItems[1][2] = "独特的企业文化";			urlLinks[1][2] = "Marykay_company_culture.html";
+menuItems[1][3] = "独特的服务";			urlLinks[1][3] = "Marykay_company_serve.html";
+menuItems[1][4] = "玫琳凯国际分布";			urlLinks[1][4] = "Marykay_company_global.html";
+menuItems[1][5] = "玫琳凯中国";			urlLinks[1][5] = "Marykay_company_china.html";
+menuPosY[2] =  61 + top_adjust;
+itemsOnMenu[2] = 4;
+menuItems[2] = new Array(itemsOnMenu[2])
+urlLinks[2] = new Array(itemsOnMenu[2])
+menuItems[2][0] = "事业道路";       urlLinks[2][0] = "Career_road.html";				
+menuItems[2][1] = "美容顾问守则";     urlLinks[2][1] = "Career_qa.html";		
+menuItems[2][2] = "全面的培训";		urlLinks[2][2] = "Career_training.html";
+menuItems[2][3] = "认可与奖励";      	urlLinks[2][3] = "Career_confirm.html";
+menuPosY[3] = 61 + top_adjust
+itemsOnMenu[3] = 3
+menuItems[3] = new Array(itemsOnMenu[3])
+urlLinks[3] = new Array(itemsOnMenu[3])
+menuItems[3][0] = "幻　时";				urlLinks[3][0] = "Product_huanshi.html"
+menuItems[3][1] = "玫琳凯";		urlLinks[3][1] = "Product_marykay.html"
+menuItems[3][2] = "娅　诗";		urlLinks[3][2] = "Product_Vitayes.html"
+menuPosY[4] = 61 + top_adjust
+itemsOnMenu[4] = 2
+menuItems[4] = new Array(itemsOnMenu[4])
+urlLinks[4] = new Array(itemsOnMenu[4])
+menuItems[4][0] = "测试你的皮肤";   		urlLinks[4][0] = "game_skin.html";
+menuItems[4][1] = "模拟彩妆大师";   			urlLinks[4][1] = "game_makeup.html";
+seriesPosY[0] = 93 + top_adjust
+seriesOnMenu[0] = 8
+seriesItems[0] = new Array(seriesOnMenu[0])
+seriesLinks[0] = new Array(seriesOnMenu[0])
+seriesItems[0][0] = "经典保养品";		seriesLinks[0][0] = "Product_mary_great.html";
+seriesItems[0][1] = "补充性保养品";   	seriesLinks[0][1] = "Product_mary_supply.html";
+seriesItems[0][2] = "彩妆系列";   		seriesLinks[0][2] = "Product_mary_dress.html";
+seriesItems[0][3] = "防晒护肤品";    		seriesLinks[0][3] = "Product_mary_sun.html";
+seriesItems[0][4] = "香氛系列";  		seriesLinks[0][4] = "Product_mary_fragrance.html";
+seriesItems[0][5] = "体面男士系列";  		seriesLinks[0][5] = "Product_mary_man.html";
+seriesItems[0][6] = "护体系列";  		seriesLinks[0][6] = "Product_mary_body.html";
+seriesItems[0][7] = "母婴护理系列";  		seriesLinks[0][7] = "Product_mary_infant.html";
+testPosY[1] = 85 + top_adjust
+testOnMenu[1] = 2
+testItems[1] = new Array(testOnMenu[1])
+testLinks[1] = new Array(testOnMenu[1])
+testItems[1][0] = "皮肤护理";		testLinks[1][0] = "information/quality.htm";
+testItems[1][1] = "色彩搭配";   	testLinks[1][1] = "information/color.htm";
+function doPopup (whichMenu, whichHotItem) {
+        if (version != "ok") {return}
+        if (whichMenu == 0) { moveOver = 5; }
+		else if (whichMenu == 1) { moveOver = 0; }
+        else if (whichMenu == 2) { moveOver = 140; }
+        else if (whichMenu == 3) { moveOver = 252; }
+        else if (whichMenu == 4) { moveOver = 357; }
+        clearTimeout(theTimeout);
+        newMenu = 0
+        if (whichMenu != lastMenu) {
+                lastMenu = whichMenu
+                newMenu = 1 
+        }
+        else if (whichHotItem != lastHotItem) {
+                newMenu = 1
+        }
+        if (newMenu) {
+                lastHotItem = whichHotItem;
+                popupWidth = "100"; insideWidth = "98";
+				if ((whichMenu == 0)) { popupWidth = "160"; insideWidth = "158"; }
+				if ((whichMenu == 1)) { popupWidth = "140"; insideWidth = "138"; }
+				if ((whichMenu == 2)) { popupWidth = "157"; insideWidth = "155"; }
+				if ((whichMenu == 3)) { popupWidth = "157"; insideWidth = "155"; }
+				if ((whichMenu == 4)) { popupWidth = "160"; insideWidth = "158"; }
+				if ((whichMenu == 5)) { popupWidth = "68"; insideWidth = "66"; }
+				popupHeight = (itemsOnMenu[whichMenu] * 15)
+				theTable  = '<table width=' + popupWidth + ' height=' + (popupHeight + 0) + ' bgcolor=#cc6699 cellpadding=0 cellspacing=0 border=0><tr><td>\n'
+				theTable += '<table align="center" width=' + insideWidth + ' height=' + popupHeight + ' bgcolor=' + bgNormal + ' cellspacing=0 cellpadding=0 border=0>\n'
+				theTable += '<tr bgcolor=#cc6699><td width="100%" height=1 colspan="3"></td></tr>\n' 
+                for (x = 0; x < itemsOnMenu[whichMenu]; x++ ) {
+						bg2Use = bgNormal; class2Use = "notHot"; arrow2Use = aroNormal; nowarrow = notarrow;
+						if (x == whichHotItem) { bg2Use = bgHot; class2Use = "Hot"; arrow2Use = aroHot; nowarrow = arrow;}
+						theTable += '<tr bgcolor=' + bg2Use + '><td valign="bottom" bgcolor=' + arrow2Use + '><a href="' + urlLinks[whichMenu][x] + '" class="' + class2Use + '" onMouseOver="doPopup(' + whichMenu + ',' + x + ');" onMouseOut="hideTime();"><img src=' + nowarrow + ' width=10 height=14 border=0 alt=""></a></td><td><a href="' + urlLinks[whichMenu][x] + '" class="' + class2Use + '" onMouseOver="doPopup(' + whichMenu + ',' + x + ');" onMouseOut="hideTime();"><img src="images/dot.gif" width=8 height=15 border=0 alt=""></a></td><td valign="bottom" align="left"><a href="' + urlLinks[whichMenu][x] + '" class="' + class2Use + '" onMouseOver="doPopup(' + whichMenu + ',' + x + ');" onMouseOut="hideTime();">' + menuItems[whichMenu][x] + '</a></td></tr>\n'
+						if (x != itemsOnMenu[whichMenu]) { theTable += '<tr bgcolor=#cc6699><td width="100%" height=1 colspan="3"></td></tr>\n' }
+                }
+                theTable += '</table>\n</td></tr></table>\n'
+                if (n4) {
+                        browserWidth = window.innerWidth;
+                        browserOffset = 20;
+                        offset = (browserWidth - pageWidth)/2 + moveOver - 2;
+                        menuPosX = 0 + moveOver;
+                        whichLayer = "nsPopup"
+                        document.layers[whichLayer].visibility = 'hide'
+                        document.layers[whichLayer].document.write(theTable)
+                        document.layers[whichLayer].document.close()
+                        if (whichHotItem == -1) {
+                                document.layers["nsBuffer"].visibility = 'hide'
+                                document.layers["nsBuffer"].document.write(theTable)
+                                document.layers["nsBuffer"].document.close()
+                                document.layers["nsBuffer"].moveTo(menuPosX, menuPosY[whichMenu])
+                                document.layers["nsBuffer"].visibility = 'show'
+                        }
+                        document.layers[whichLayer].moveTo(menuPosX, menuPosY[whichMenu])
+                        document.layers[whichLayer].visibility = 'show'
+                }
+                else if (ie4) {
+                        browserWidth = parseInt(document.body.offsetWidth);
+                        browserOffset = 20;
+                        offset = (browserWidth - pageWidth)/2 + moveOver;
+                        menuPosX = 0 + moveOver;
+                        whichLayer = "iePopup"
+                        document.all[whichLayer].innerHTML = theTable
+                        document.all[whichLayer].style.posLeft = menuPosX
+                        document.all[whichLayer].style.posTop = menuPosY[whichMenu]
+                        document.all[whichLayer].style.visibility = 'visible'
+			}
+		}
+		if (whichMenu == 3 && whichHotItem == 1) {
+		seriesPopup(0,-1)
+		}
+
+		if(n4) {
+		if (whichMenu == 2 && whichHotItem != 2) {
+			if (document.layers["series"].visibility == "show" &&	document.layers["seriesmore"].visibility == "show") {
+					document.layers["series"].visibility = "hide";
+					document.layers["seriesmore"].visibility = "hide";
+			}
+		}
+		}
+		if(ie4) {
+			if (whichMenu == 3 && whichHotItem != 1) {
+				if (document.all["ieseries"].style.visibility == 'visible') {
+				document.all["ieseries"].style.visibility = 'hidden';
+				}
+			}
+		}
+		if (whichMenu == 4 && whichHotItem == 0) {
+		testPopup(1,-1)
+		}
+		if(n4) {		
+			if (whichMenu == 3 && whichHotItem != 1) {
+				if (document.layers["test"].visibility == "show" &&	document.layers["testmore"].visibility == "show") {
+						document.layers["test"].visibility = "hide";
+						document.layers["testmore"].visibility = "hide";
+				}
+			}
+		}
+		if(ie4) {
+			if (whichMenu == 4 && whichHotItem != 0) {
+				if (document.all["ietest"].style.visibility == 'visible') {
+				document.all["ietest"].style.visibility = 'hidden';
+				}
+			}
+		}
+	}
+function seriesPopup (seriesMenu, seriesHotItem) {
+        if (version != "ok") {return}
+	if(n4) {
+		if (document.layers["series"].visibility == "hide" &&	document.layers["seriesmore"].visibility == "hide") {
+				document.layers["series"].visibility = "show";
+				document.layers["seriesmore"].visibility = "show";
+		}
+ 	}
+	if(ie4) {
+		if (document.all["ieseries"].style.visibility == 'hidden') {
+		document.all["ieseries"].style.visibility = 'visible';
+		}
+	}
+        if (seriesMenu == 0) { seriesmoveOver = 294; }
+		else if (seriesMenu == 1) { seriesmoveOver = 427; }
+        clearTimeout(theTimeout);
+		newseriesMenu = 0
+        if (seriesMenu != lastseriesMenu) {
+                lastseriesMenu = seriesMenu
+                newseriesMenu = 1 
+        }
+        else if (seriesHotItem != lastseriesHotItem) {
+                newseriesMenu = 1
+        }
+        if (newseriesMenu) {
+                lastseriesHotItem = seriesHotItem;
+                seriesWidth = "120"; insideseriesWidth = "118";
+				seriesPopupHeight = (seriesOnMenu[seriesMenu] * 15)
+				seriesTable  = '<table width=' + seriesWidth + ' bgcolor=#cc6699 cellpadding=0 cellspacing=0 border=0><tr><td>\n'
+				seriesTable += '<table align="center" width=' + insideseriesWidth + ' bgcolor=' + bgNormal + ' cellspacing=0 cellpadding=0 border=0>\n'
+				seriesTable += '<tr bgcolor=#cc6699><td width="100%" height=1 colspan="3"></td></tr>\n' 
+                for (i = 0; i < seriesOnMenu[seriesMenu]; i++ ) {
+						bg2Use = bgNormal; class2Use = "notHot"; arrow2Use = aroNormal; nowarrow = notarrow;
+						if (i == seriesHotItem) { bg2Use = bgHot; class2Use = "Hot"; arrow2Use = aroHot; nowarrow = arrow;}						
+						seriesTable += '<tr bgcolor=' + bg2Use + '><td valign="top" bgcolor=' + arrow2Use + '><a href="' +seriesLinks[seriesMenu][i] + '" class="' + class2Use + '" onMouseOver="seriesPopup(' + seriesMenu + ',' + i + ');" onMouseOut="hideTime();"><img src=' + nowarrow + ' width=10 height=14 border=0 alt=""></a></td><td><a href="' +seriesLinks[seriesMenu][i] + '" class="' + class2Use + '" onMouseOver="seriesPopup(' + seriesMenu + ',' + i + ');" onMouseOut="hideTime();"><img src="images/dot.gif" width=8 height=15 border=0 alt=""></a></td><td valign="bottom"><a href="' +seriesLinks[seriesMenu][i] + '" class="' + class2Use + '" onMouseOver="seriesPopup(' + seriesMenu + ',' + i + ');" onMouseOut="hideTime();">' + seriesItems[seriesMenu][i] + '</a></td></tr>\n'
+						if (i != seriesOnMenu[seriesMenu]) { seriesTable += '<tr bgcolor=#cc6699><td width="100%" height=1 colspan="3"></td></tr>\n' }
+                }
+                seriesTable += '</table>\n</td></tr></table>\n'
+                if (n4) {
+                        browserWidth = window.innerWidth;
+                        browserOffset = 20;
+                        offset = (browserWidth - pageWidth)/2 + moveOver - 2;
+                        seriesPosX = 0 + seriesmoveOver;        
+                        seriesLayer = "series"
+                        document.layers[seriesLayer].visibility = 'hide'
+                        document.layers[seriesLayer].document.write(seriesTable)
+                        document.layers[seriesLayer].document.close()
+                        if (seriesHotItem == -1) {
+                                document.layers["seriesmore"].visibility = 'show'
+                                document.layers["seriesmore"].document.write(seriesTable)
+                                document.layers["seriesmore"].document.close()
+                                document.layers["seriesmore"].visibility = 'show'
+                        }
+                        document.layers[seriesLayer].visibility = 'show'
+                }
+                else if (ie4) {
+                        browserWidth = parseInt(document.body.offsetWidth);
+                        browserOffset = 20;
+                        offset = (browserWidth - pageWidth)/2 + moveOver;
+                        menuPosX = 0 + moveOver;
+                        seriesLayer = "ieseries"
+                        document.all[seriesLayer].innerHTML = seriesTable
+                        document.all[seriesLayer].style.posLeft = 408
+                        document.all[seriesLayer].style.posTop = 81
+                        document.all[seriesLayer].style.visibility = 'visible'
+			}
+		}
+	}
+function testPopup (testMenu, testHotItem) {
+        if (version != "ok") {return}
+  if(n4){      	
+		if (document.layers["test"].visibility == "hide" &&	document.layers["testmore"].visibility == "hide") {
+				document.layers["test"].visibility = "show";
+				document.layers["testmore"].visibility = "show";
+		}
+	}	
+	if(ie4) {
+		if (document.all["ietest"].style.visibility == 'hidden') {
+		document.all["ietest"].style.visibility = 'visible';
+		}
+	}
+        if (testMenu == 0) { testmoveOver = 294; }
+		else if (testMenu == 1) { testmoveOver = 0; }
+        clearTimeout(theTimeout);
+        newtestMenu = 0
+        if (testMenu != lasttestMenu) {
+                lasttestMenu = testMenu
+                newtestMenu = 1 
+        }
+        else if (testHotItem != lasttestHotItem) {
+                newtestMenu = 1
+        }
+        if (newtestMenu) {
+                lasttestHotItem = testHotItem;
+                testWidth = "120"; insidetestWidth = "118";
+				testPopupHeight = (testOnMenu[testMenu] * 15)
+				testTable  = '<table width=' + testWidth + ' bgcolor=#cc6699 cellpadding=0 cellspacing=0 border=0><tr><td>\n'
+				testTable += '<table align="center" width=' + insidetestWidth + ' bgcolor=' + bgNormal + ' cellspacing=0 cellpadding=0 border=0>\n'
+				testTable += '<tr bgcolor=#cc6699><td width="100%" height=1 colspan="3"></td></tr>\n' 
+                for (i = 0; i < testOnMenu[testMenu]; i++ ) {
+						bg2Use = bgNormal; class2Use = "notHot"; arrow2Use = aroNormal; nowarrow = notarrow;
+						if (i == testHotItem) { bg2Use = bgHot; class2Use = "Hot"; arrow2Use = aroHot; nowarrow = arrow;}
+						testTable += '<tr bgcolor=' + bg2Use + '><td valign="top" bgcolor=' + arrow2Use + '><a href="' +testLinks[testMenu][i] + '" class="' + class2Use + '" onMouseOver="testPopup(' + testMenu + ',' + i + ');" onMouseOut="hideTime();"><img src=' + nowarrow + ' width=10S height=14 border=0 alt=""></a></td><td><a href="' +testLinks[testMenu][i] + '" class="' + class2Use + '" onMouseOver="testPopup(' + testMenu + ',' + i + ');" onMouseOut="hideTime();"><img src="images/dot.gif" width=8 height=15 border=0 alt=""></a></td><td valign="bottom"><a href="' +testLinks[testMenu][i] + '" class="' + class2Use + '" onMouseOver="testPopup(' + testMenu + ',' + i + ');" onMouseOut="hideTime();">' + testItems[testMenu][i] + '</a></td></tr>\n'
+						if (i != testOnMenu[testMenu]) { testTable += '<tr bgcolor=#cc6699><td width="100%" height=1 colspan="3"></td></tr>\n' }
+                }
+                testTable += '</table>\n</td></tr></table>\n'
+                if (n4) {
+                        browserWidth = window.innerWidth;
+                        browserOffset = 20;
+                        offset = (browserWidth - pageWidth)/2 + moveOver - 2;
+                        testPosX = 10 + testmoveOver;
+        
+                        testLayer = "test"
+                        document.layers[testLayer].visibility = 'hide'
+                        document.layers[testLayer].document.write(testTable)
+                        document.layers[testLayer].document.close()
+                        if (testHotItem == -1) {
+                                document.layers["testmore"].visibility = 'show'
+                                document.layers["testmore"].document.write(testTable)
+                                document.layers["testmore"].document.close()
+                                document.layers["testmore"].visibility = 'show'
+                        }
+                        document.layers[testLayer].visibility = 'show'
+                }
+                else if (ie4) {
+                        browserWidth = parseInt(document.body.offsetWidth);
+                        browserOffset = 20;
+                        offset = (browserWidth - pageWidth)/2 + moveOver;
+                        menuPosX = 0 + moveOver;
+                        testLayer = "ietest"
+                        document.all[testLayer].innerHTML = testTable
+                        document.all[testLayer].style.posLeft = 516
+                        document.all[testLayer].style.posTop = 65
+                        document.all[testLayer].style.visibility = 'visible'
+			}
+		}
+	}
+function hideTime() {
+        if (version != "ok") {
+        cleanMe();        
+        }
+        else{        	
+		theTimeout = setTimeout("hidePopups()", "300");
+        }
+}
+function cleanMe()  {
+        document.makeup.src="images/makeup_cold.gif";
+		document.find.src="images/images/navbar_com1.gif";
+		document.allcg.src="images/makeup_cold.gif";
+		document.cg.src="images/cgconnection_cold.gif";
+		document.shop.src="images/shopcg_cold.gif";
+		document.site.src="images/siteguide_cold.gif";
+		return;
+                }
+function hidePopups() {
+
+		lastMenu = -99
+		lastHotItem = -99
+		
+        if (n4) {
+		document.layers["nsPopup"].visibility = "hide";
+		document.layers["nsBuffer"].visibility = "hide";
+		document.layers["test"].visibility = "hide";
+		document.layers["testmore"].visibility = "hide";
+		document.layers["series"].visibility = "hide";
+		document.layers["seriesmore"].visibility = "hide";
+		newseriesMenu = 0
+		newtestMenu = 0
+        cleanMe();
+	}
+
+		else if (ie4) { 
+		document.all["iePopup"].style.visibility = 'hidden';
+		document.all["ieseries"].style.visibility = 'hidden';
+		document.all["ietest"].style.visibility = 'hidden';
+		cleanMe();
+	}
+}
+</SCRIPT>
+<SCRIPT language=JavaScript>
+if(document.images)
+{
+	makeup_on = new Image();
+	makeup_on.src = "images/navbar_com1.gif";
+	makeup_off = new Image();
+	makeup_off.src = "images/makeup_cold.gif";
+
+	find_on = new Image();
+	find_on.src = "images/findyourlook_hot.gif";
+	find_off = new Image();
+	find_off.src = "images/findyourlook_cold.gif";
+	
+	allcg_on = new Image();
+	allcg_on.src = "images/navbar_com1.gif";
+	allcg_off = new Image();
+	allcg_off.src = "images/makeup_cold.gif";
+	
+	cg_on = new Image();
+	cg_on.src = "images/cgconnection_hot.gif";
+	cg_off = new Image();
+	cg_off.src = "images/cgconnection_cold.gif"
+	
+	shop_on = new Image();
+	shop_on.src = "images/shopcg_hot.gif";
+	shop_off = new Image();
+	shop_off.srv = "images/shopcg_cold.gif";
+	
+	site_on = new Image();
+	site_on.src = "images/siteguide_hot.gif";
+	site_off = new Image();
+	site_off.src = "images/siteguide_cold.gif";
+}
+function act(imgName) {
+        if (document.images) {
+		clearTimeout(theTimeout);
+		hidePopups();
+        document.makeup.src="images/makeup_cold.gif";
+		document.find.src="images/findyourlook_cold.gif";
+		document.allcg.src="images/makeup_cold.gif";
+		document.cg.src="images/cgconnection_cold.gif";
+		document.shop.src="images/shopcg_cold.gif";
+		document.site.src="images/siteguide_cold.gif";
+        document[imgName].src = eval(imgName + "_on.src");
+        }
+}
+</SCRIPT>
+<link rel="stylesheet" href="cuddle.css" type="text/css">
+<script language="JavaScript">
+<!--
+function MM_reloadPage(init) { 
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+// -->
+</script>
+<link rel="stylesheet" href="wd.css" type="text/css">
+</HEAD>
+<BODY bgColor=#ffffff leftMargin=0 marginwidth="0" marginheight="0" topMargin=18>
+<DIV class=menu id=iePopup style="VISIBILITY: hidden; Z-INDEX: 93"></DIV>
+<DIV class=menu id=ieseries style="VISIBILITY: hidden; Z-INDEX: 94"></DIV>
+<DIV class=menu id=ietest style="VISIBILITY: hidden; Z-INDEX: 99"></DIV>
+<LAYER class=menu id=nsPopup visibility="hide" z-index="99"></LAYER>
+<layer class=menu id=nsBuffer visibility="hide" z-index="98"></layer>
+<LAYER class=menu id=series visibility="hide" z-index="99" left="296" top="97"></LAYER>
+<LAYER class=menu id=seriesmore visibility="hide" z-index="98" left="296" top="97"></LAYER>
+<LAYER class=menu id=test visibility="hide" z-index="99" left="429" 
+top="81"></LAYER>
+<LAYER class=menu id=testmore visibility="hide" z-index="98" left="429" top="81"></LAYER>
+<div id="Layer1" style="position:absolute; left:3px; top:13px; width:750px; z-index:100; visibility: hidden"><table ><tr><td width=140><a href="#" onMouseOut=hideTime(); onMouseOver="act('makeup'); doPopup(1,-1);" target=_top><img border=0 height=20 name=makeup src="images/navbar_com1.gif" width=98></a></td><td width=112><a href="#"          onMouseOut=hideTime(); onMouseOver="act('find'); doPopup(2,-1);" target=_top><img alt="" border=0 height=20 name=find   src="images/navbar_career2.gif" width=93></a></td><td width=105><a  href="#" onMouseOut=hideTime(); onMouseOver="act('allcg'); doPopup(3,-1);"  target=_top><img alt="" border=0 height=20 name=allcg  src="images/navbar_product1.gif" width=103></a></td> <td width=115><a  href="#" onMouseOut=hideTime(); onMouseOver="act('cg'); doPopup(4,-1);"  target=_top><img alt="" border=0 height=20 name=cg src="images/navbar_game1.gif" width=114></a></td><td width=74><a href="#"  onMouseOut=cleanMe(); onMouseOver="act('shop');" target=_top><img  alt="" border=0 height=20 name=shop src="images/navbar_news1.gif" width=123></a></td></tr></table></div>
+<table border=0 cellpadding=0 cellspacing=0 width="750">
+  <tr><td height=25 rowspan=2 valign=top width=272><img height=25 src="images/total.gif" width=272 border="0"></td><td align=left valign=top width=478><img height=3 src="images/topline.gif" width=478></td></tr><tr><td valign=center width="478" class="java"><font color="#D5928C">丰 富 女 性 人 生! 　　　　　　　<font face="Verdana, Arial, Helvetica, sans-serif"><b>Enriching 
+      women's lives</b></font></font></td></tr></table><table border=0 cellpadding=0 cellspacing=0 width=750 background="images/navbar_bg.gif"><tr><td width=122><a href="Marykay_company.html" onMouseOut=hideTime(); onMouseOver="act('makeup'); doPopup(1,-1);" target=_top><img border=0 height=20 name=makeup src="images/navbar_com1.gif" width=98></a></td><td width=111><a href="Marykay_career.html" onMouseOut=hideTime(); onMouseOver="act('find'); doPopup(2,-1);" target=_top><img alt="" border=0 height=20 name=find 
+ src="images/navbar_career1.gif" width=93></a></td><td width=106><a href="Marykay_products.html" nMouseOut=hideTime(); onMouseOver="act('allcg'); doPopup(3,-1);" target=_top><img alt="" border=0 height=20 name=allcg src="images/navbar_product1.gif" width=103></a></td><td width=114><a href="Marykay_game.html" onMouseOut=hideTime(); onMouseOver="act('cg'); doPopup(4,-1);" target=_top><img alt="" border=0 height=20 name=cg src="images/navbar_game1.gif" width=114></a></td>
+    <td width=126><a href="Marykay_new.html" onMouseOut=cleanMe(); onMouseOver="act('shop');" target=_top><img alt="" border=0 height=20 name=shop src="images/navbar_news1.gif" width=123></a></td>
+    <td width="78"><a href="index.html"onMouseOut=cleanMe(); onMouseOver="act('site');" target=_top><img alt="" border=0 height=20 name=site 
+src="images/navbar_shop1.gif" width=74></a></td>
+    <td width="93"><a href="home.html" onMouseOut=cleanMe(); onMouseOver="act('site');" target=_top><img alt="" border=0 height=20 name=site src="images/navbar_home.gif" width=74></a></td></tr></table>
+<table width="750" border="0" cellspacing="1" cellpadding="1">
+  <tr> 
+    <td class="wd" height="18"><a href="Marykay_products.html" class="wd">我们的产品</a>&gt;&gt;<a href="Product_marykay.html" class="wd">玫琳凯</a>&gt;&gt;香氛系列</td>
+  </tr>
+</table>
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td colspan="2" height="88" valign="top">
+      <table width="99%" border="0" cellspacing="0" cellpadding="0" height="86">
+        <tr>
+          <td width="55%" valign="middle" align="center">
+            <table width="95%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td height="80" valign="middle" style="line-height: 135%"><font color="#D59A42">&nbsp;&nbsp;&nbsp;&nbsp;香水是主观的和诉诸感情的。香水并不以产品功效为诉求，通常出于情感和渴望才购买。任何香水都能够包含高达1000种不同的成份，随成份的不同，香味及其在肌肤上的持久性也会因而相异。</font></td>
+              </tr>
+            </table>
+            </td>
+          <td width="45%"><img src="images/fragrance.gif" width="420" height="80"></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+ 
+  <tr> 
+    <td class="wd" valign="top" height="209" rowspan="2"> 
+      <table width="100%" border="0" cellspacing="3" cellpadding="3">
+        <tr> 
+          <td height="219" valign="top"> 
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td height="19">&nbsp;</td>
+              </tr>
+            </table>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td height="75"> <img src="images/Journey-logo.gif" width="327" height="48"> 
+                </td>
+              </tr>
+              <tr>
+                <td height="78" class="java" style="line-height: 150%"><font color="#6699cc">&nbsp;&nbsp;&nbsp;&nbsp;旅情香水是为了那些了解生活是由自己所创造的女性而推出的，今天的生活是为了创造明天的回忆。人生旅途中经历丰富了生活-感谢世界所创造的一切美感，在生活中偷取一段宁静的时刻。因为，最终，生活的乐趣仍有待自己去发掘。</font> 
+                </td>
+              </tr>
+              <tr> 
+                <td> 
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td class="java" bgcolor="#F4E4CD" style="line-height: 135%"><font color="#CC6633">&nbsp;</font>旅情香水<font color="#CC6633">　　　　　　　　　　　　　　　　</font>50ml 
+                        &nbsp;&nbsp; #1667&nbsp;&nbsp; 售 价 ： 320元</td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr> 
+                <td class="java" style="line-height: 135%" height="78"><font color="#CC6633"><br>
+                  </font>　　百分之百植物花草制成的香水。开瓶后，您首先感受到的是冰薄荷和水田芹的气味；接着，小苍兰的香味象一阵风，清新自然，极富女人味；最后，散发的则是带有杏树、麝香和掬木气味的尾香，向您传递的是温馨和完美...... 
+                </td>
+              </tr>
+              <tr> 
+                <td class="java"> <br>
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td class="wd" bgcolor="#F4E4CD" style="line-height: 135%"><font color="#CC6633">&nbsp;旅情沐浴乳　　　　　　　　　　　　　　　150ml&nbsp;&nbsp; 
+                        #2174 &nbsp;&nbsp;售 价 ： 80元</font></td>
+                    </tr>
+                  </table>
+                  <br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;滋润轻盈，让您体验华贵、丝般的沐浴感受。 <br>
+                  <br><br>
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td class="wd" bgcolor="#F4E4CD" style="line-height: 135%"><font color="#CC6633">&nbsp;旅情护体乳　　　　　　　　　　　　　　&nbsp;&nbsp;&nbsp;150ml 
+                        &nbsp;&nbsp;#2135 &nbsp;&nbsp;售 价 ： 88元</font></td>
+                    </tr>
+                  </table>
+                  <br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;配方轻盈不粘腻，能被肌肤充分吸收，创造出动人的凝脂肌肤。 <br>
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td height="219">
+            <table border="0" cellpadding="0" cellspacing="0" width="290">
+              <!-- fwtable fwsrc="Untitled" fwbase="journey3.jpg" fwstyle="Dreamweaver" fwdocid = "742308039" fwnested="0" -->
+              <tr> 
+                <!-- Shim row, height 1. -->
+                <td><img src="spacer.gif" width="17" height="1" border="0"></td>
+                <td><img src="spacer.gif" width="132" height="1" border="0"></td>
+                <td><img src="spacer.gif" width="53" height="1" border="0"></td>
+                <td><img src="spacer.gif" width="49" height="1" border="0"></td>
+                <td><img src="spacer.gif" width="39" height="1" border="0"></td>
+                <td><img src="spacer.gif" width="1" height="1" border="0"></td>
+              </tr>
+              <tr>
+                <!-- row 1 -->
+                <td colspan="5"><img name="journey3_r1_c1" src="images/journey3_r1_c1.jpg" width="290" height="48" border="0"></td>
+                <td><img src="spacer.gif" width="1" height="48" border="0"></td>
+              </tr>
+              <tr>
+                <!-- row 2 -->
+                <td colspan="5"><img name="journey3_r2_c1" src="images/journey3_r2_c1.jpg" width="290" height="48" border="0"></td>
+                <td><img src="spacer.gif" width="1" height="48" border="0"></td>
+              </tr>
+              <tr>
+                <!-- row 3 -->
+                <td colspan="5"><img name="journey3_r3_c1" src="images/journey3_r3_c1.jpg" width="290" height="46" border="0"></td>
+                <td><img src="spacer.gif" width="1" height="46" border="0"></td>
+              </tr>
+              <tr>
+                <!-- row 4 -->
+                <td colspan="5"><img name="journey3_r4_c1" src="images/journey3_r4_c1.jpg" width="290" height="49" border="0"></td>
+                <td><img src="spacer.gif" width="1" height="49" border="0"></td>
+              </tr>
+              <tr>
+                <!-- row 5 -->
+                <td colspan="3"><img name="journey3_r5_c1" src="images/journey3_r5_c1.jpg" width="202" height="48" border="0"></td>
+                <td rowspan="3"><img name="journey3_r5_c4" src="images/journey3_r5_c4.jpg" width="49" height="173" border="0"></td>
+                <td rowspan="4"><img name="journey3_r5_c5" src="images/journey3_r5_c5.jpg" width="39" height="233" border="0"></td>
+                <td><img src="spacer.gif" width="1" height="48" border="0"></td>
+              </tr>
+              <tr>
+                <!-- row 6 -->
+                <td colspan="3"><img name="journey3_r6_c1" src="images/journey3_r6_c1.jpg" width="202" height="53" border="0"></td>
+                <td><img src="spacer.gif" width="1" height="53" border="0"></td>
+              </tr>
+              <tr>
+                <!-- row 7 -->
+                <td rowspan="3"><img name="journey3_r7_c1" src="images/journey3_r7_c1.jpg" width="17" height="176" border="0"></td>
+                <td rowspan="2"><img name="journey3_r7_c2" src="images/journey3_r7_c2.jpg" width="132" height="132" border="0"></td>
+                <td rowspan="2"><img name="journey3_r7_c3" src="images/journey3_r7_c3.jpg" width="53" height="132" border="0"></td>
+                <td><img src="spacer.gif" width="1" height="72" border="0"></td>
+              </tr>
+              <tr>
+                <!-- row 8 -->
+                <td><img name="journey3_r8_c4" src="images/journey3_r8_c4.jpg" width="49" height="60" border="0"></td>
+                <td><img src="spacer.gif" width="1" height="60" border="0"></td>
+              </tr>
+              <tr>
+                <!-- row 9 -->
+                <td><img name="journey3_r9_c2" src="images/journey3_r9_c2.jpg" width="132" height="44" border="0"></td>
+                <td colspan="3"><img name="journey3_r9_c3" src="images/journey3_r9_c3.jpg" width="141" height="44" border="0"></td>
+                <td><img src="spacer.gif" width="1" height="44" border="0"></td>
+              </tr>
+              <!--   This table was automatically created with Macromedia Fireworks 4.0   -->
+              <!--   http://www.macromedia.com   -->
+            </table>
+          </td>
+        </tr>
+      </table>
+      <table width="98%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td class="wd" width="3%" valign="top" height="69">&nbsp; </td>
+          <td class="wd" width="45%" valign="top" height="69">
+            <table border="0" cellpadding="0" cellspacing="0" width="350">
+              <!-- fwtable fwsrc="Untitled" fwbase="journey2.jpg" fwstyle="Dreamweaver" fwdocid = "742308039" fwnested="0" -->
+              <tr> 
+                <td><img src="spacer.gif" width="350" height="1" border="0"></td>
+                <td><img src="spacer.gif" width="1" height="1" border="0"></td>
+              </tr>
+              <tr> 
+                <td><img name="journey2_r1_c1" src="images/journey2_r1_c1.jpg" width="350" height="23" border="0"></td>
+                <td><img src="spacer.gif" width="1" height="23" border="0"></td>
+              </tr>
+              <tr> 
+                <td><img name="journey2_r2_c1" src="images/journey2_r2_c1.jpg" width="350" height="31" border="0"></td>
+                <td><img src="spacer.gif" width="1" height="31" border="0"></td>
+              </tr>
+              <tr> 
+                <td><img name="journey2_r3_c1" src="images/journey2_r3_c1.jpg" width="350" height="34" border="0"></td>
+                <td><img src="spacer.gif" width="1" height="34" border="0"></td>
+              </tr>
+              <tr> 
+                <td><img name="journey2_r4_c1" src="images/journey2_r4_c1.jpg" width="350" height="39" border="0"></td>
+                <td><img src="spacer.gif" width="1" height="39" border="0"></td>
+              </tr>
+              <tr> 
+                <td><img name="journey2_r5_c1" src="images/journey2_r5_c1.jpg" width="350" height="36" border="0"></td>
+                <td><img src="spacer.gif" width="1" height="36" border="0"></td>
+              </tr>
+              <tr> 
+                <td><img name="journey2_r6_c1" src="images/journey2_r6_c1.jpg" width="350" height="42" border="0"></td>
+                <td><img src="spacer.gif" width="1" height="42" border="0"></td>
+              </tr>
+              <tr> 
+                <td><img name="journey2_r7_c1" src="images/journey2_r7_c1.jpg" width="350" height="22" border="0"></td>
+                <td><img src="spacer.gif" width="1" height="22" border="0"></td>
+              </tr>
+              <tr> 
+                <td><img name="journey2_r8_c1" src="images/journey2_r8_c1.jpg" width="350" height="25" border="0"></td>
+                <td><img src="spacer.gif" width="1" height="25" border="0"></td>
+              </tr>
+            </table>
+          </td>
+          <td class="java" width="52%" height="69" valign="top" style="line-height: 135%"> 
+            <img src="images/elige_logo.gif" width="345" height="62"> 
+            <table width="100%" border="0" cellspacing="2" cellpadding="2">
+              <tr> 
+                <td class="wd" height="19" bgcolor="#F6F6F6"><font color="#CC6633"> 
+                  　依恋香水　　　　　　　　　　50ml &nbsp;&nbsp;#3973 &nbsp;&nbsp;售 价：380元</font></td>
+              </tr>
+            </table>
+            <br>
+            <br>
+            <table width="70%" border="0" cellspacing="2" cellpadding="2" align="center">
+              <tr> 
+                <td class="wd" height="19" style="line-height: 135%"><font color="#CC6633">　　东方香型，带来丰富诱人的女人香。前味以清新高昂的微香青草调揭开序幕；接着，山茶花、晚香玉等香味迎来，组成馥郁而丰盈的中味；后味以檀香木及薄荷等，营造出令人沉吟不已的雅致芳香。 
+                  </font> <font color="#CC6633" face="Verdana, Arial, Helvetica, sans-serif"> 
+                  </font></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr> 
+    <td class="wd" align="center" valign="middle" height="128">&nbsp; </td>
+  </tr>
+</table>
+<p align="center"><a href="#" class="wd"><b>--回页首--</b></a></p>
+</BODY></HTML>
