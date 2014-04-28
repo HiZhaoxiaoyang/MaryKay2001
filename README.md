@@ -5,7 +5,7 @@ MaryKay site prototype which create@2001.
 
 
 Tools:
-Dreamweaver 2.0
+Dreamweaver 4.0
 Photoshop4.0
 websphere
 ultraedit
